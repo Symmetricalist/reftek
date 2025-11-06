@@ -6,16 +6,21 @@
 
 Please keep in mind that this is not an art tool, rather, it makes the process of reference sheet creation more interesting. You have to supply the images of your OC yourself.
 
-# Features
+# Feature List
 - All the refsheet content is stored in an annotated .js file, making Reftek easier for non-coder artists to use.
 - You can display your OC from various different angles and with multiple outfits.
 - Customizable toggle switches to hide obstructive things like hair and tails.
 - An information section where you can add:
    - Any kind of info you want.
-   - Headings and lists.
+   - Headings, lists, and notes.
    - Colors with descriptions and buttons to copy their hex code.
 - A theme CSS file with its basic customization options at the top.
 - Simple HTML structure for easier custom CSS theme creation.
+
+## Planned Features
+- Only display certain colors when an outfit is selected for clarity (planned for Alpha III)
+- GUI-based editor (i got a guy workin on it)
+- Support for multiple characters on one page (probably not happening for a long time)
 
 # Support 
 If you need help and support, join the **PuzzylPiece Software Division** Discord server at https://discord.gg/R3YxgZxa2m
