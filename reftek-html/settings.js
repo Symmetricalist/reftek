@@ -1,5 +1,13 @@
 // HELLO! This is the file you are supposed to edit to play with the refsheet.
 
+// ADD HEADERS HERE.
+// If you don't want the headers to appear, just leave each one as "".
+const headers = [
+    "Angles",
+    "Outfits",
+    ""
+]
+
 // ADD ANGLES HERE. 
 // Display name first, file path second.
 const angles = [
@@ -30,12 +38,17 @@ const outfits = [
 const title = ["t", "Placeholder"]
 
 // INFORMATION
-
 // Type of info first, description second.
 // For headings, Put the heading text as the first value and then put "h" as the second.
-// For unordered lists, Put the heading text as the first value and then put "l" as the second. Then for a third value, make an array that 
+// For unordered lists, Put the heading text as the first value and then put "l" as the second. Then for a third value, make an array that contains each list item as a separate string.
+// For notes without labels, put your note as the first value and then put "n" as the second.
 const info = [
-    ["Placeholder", "Placeholder"]
+    ["Heading example", "h"],
+    ["Placeholder", "Placeholder"],
+    ["List example", "l", [
+        "This", "is a", "list"
+    ]],
+    ["Note example", "n"]
 ]
 
 // ADD COLORS HERE
@@ -47,6 +60,7 @@ const colors = [
 
 
 // ANIMATIONS
+// This will be replaced with preset animations later but for now you can just modify this code.
 
 const keyframesLeft = [
     { transform: 'translateX(10px)' },

@@ -10,6 +10,11 @@ const angleForm = document.getElementById("angleToggles")
 const outfitPic = document.getElementById("outfitguy")
 const angleTxt = document.getElementById("anglesText")
 const outfitTxt = document.getElementById("outfitsText")
+const titles = [
+    document.getElementById("anglesTitle"),
+    document.getElementById("outfitsTitle"),
+    document.getElementById("dataTitle"),
+]
 
 function preloadEverything() {
     var images = [];
@@ -36,6 +41,15 @@ function changeAngleToggle(val) {
 }
 function spawnInThings() {
     updateImages();
+    for (let i = 0; i < 3; i++) {
+        console.log(titles[i]);
+        console.log(headers[i]);
+        if (headers[i] == "") {
+            titles[i].style.display = "none";
+        } else {
+            titles[i].innerText = headers[i];
+        }
+    }
     if (angles.length == 1) {
         document.getElementById("butt1").style.display = "none";
         document.getElementById("butt2").style.display = "none";
@@ -69,7 +83,15 @@ function spawnInThings() {
             td.appendChild(list);
             tr.appendChild(td);
             infoTable.appendChild(tr);
-        } else {
+        } else if (info[i][1] == "n") {
+            const tr = document.createElement("tr");
+            const td = document.createElement("td");
+            td.innerText = info[i][0];
+            td.colSpan = 2;
+            tr.appendChild(td);
+            infoTable.appendChild(tr);
+        }
+        else {
             const newInfoRow = document.createElement("tr");
             const newInfoType = document.createElement("th");
             const newInfoTypeContent = document.createTextNode(info[i][0]);
