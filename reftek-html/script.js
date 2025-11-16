@@ -40,6 +40,9 @@ function setupCharacters() {
 			characters[0].colors = colors
 		}
 	}
+	if (typeof headers === "undefined") {
+		headers = ["Angles","Outfits","Data","Hide"]
+	}
 	
 	for (let c = 0; c < characters.length; c++) {
 		characters[c].angleIndex = 0;
